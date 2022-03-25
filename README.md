@@ -18,6 +18,14 @@ This is an accompaning github repository containing all codes related to the pap
 
 ## Data
 
-The data used for this analysis came from Wave 1 and Wave 2 of the National Epidemiologic Survey on Alcohol and Related Conditions (NESARC). This data is available to download directly from the NESARC Website <http://niaaa.census.gov>. Additional information on how to download this data is listed here: <http://niaaa.census.gov>. 
+The data used for this analysis came from Wave 1 and Wave 2 of the National Epidemiologic Survey on Alcohol and Related Conditions (NESARC). This data is available to download directly from the NESARC Website <http://niaaa.census.gov>. Additional information on how to download this data is listed here: <https://pubs.niaaa.nih.gov/publications/arh29-2/74-78.htm>. 
+
+The initial files used for this analysis are the Wave 1 Mother dataset (w1mother.sas7bdat) and the subset of suicide questions from Wave 2 (w2mother_suicideonly.csv)
 
 ## Code 
+
+The code is divided into two folders. The first (Data_Processing) contains all the necessary scripts to process the data into R. There are three scripts in this folder:
+
+1. Script1_GenerateSample_JAMA2021_20220325: Merges the raw SAS version of the Wave 1 with the suicide variables from Wave 2
+2. Script2_CaseDefition_JAMA2021_20220325: Defines the cases for this analysis as detailed in the Methods section of the paper
+3. Script3_CleanData_JAMA2021_20220325: This script processes and organizes the risk factors variables in the data. A more detailed explanation of this process is included in the supplement (see "Organizing the risk factor variables") 
