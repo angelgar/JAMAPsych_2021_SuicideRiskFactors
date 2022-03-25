@@ -18,6 +18,6 @@ This is an accompaning github repository containing all codes related to the pap
 
 ## Data
 
-The data came from
+The data used for this analysis came from Wave 1 and Wave 2 of the National Epidemiologic Survey on Alcohol and Related Conditions (NESARC). This data is available to download directly from the NESARC Website <http://niaaa.census.gov>. Additional information on how to download this data is listed here: <http://niaaa.census.gov>. 
 
 ## Code 
