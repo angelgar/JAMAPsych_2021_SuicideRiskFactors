@@ -26,7 +26,7 @@ The initial files used for this analysis are the Wave 1 Mother dataset (w1mother
 
 ### Processing
 
-The code is divided into two folders. The first (Data_Processing) contains all the necessary scripts to process the data into R. There are three scripts in this folder that have to be run in order:
+The code is divided into two folders. The first (Data_Processing) contains all the necessary scripts to process the data into R. To execute this script. You need to have the raw data files "w1mother.sas7bdat", "w2mother_suicideonly.csv", and "w1w2suicidedata.RData" under the "/Data/Raw_Data" directory. There are three scripts in this folder that have to be run in order:
 
 1. **Script1_GenerateSample_JAMA2021_20220325:** Merges the raw SAS version of the Wave 1 with the suicide variables from Wave 2
 2. **Script2_CaseDefition_JAMA2021_20220325:** Defines the cases for this analysis as detailed in the Methods section of the paper
