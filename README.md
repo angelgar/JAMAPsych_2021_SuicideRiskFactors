@@ -28,4 +28,4 @@ The code is divided into two folders. The first (Data_Processing) contains all t
 
 1. Script1_GenerateSample_JAMA2021_20220325: Merges the raw SAS version of the Wave 1 with the suicide variables from Wave 2
 2. Script2_CaseDefition_JAMA2021_20220325: Defines the cases for this analysis as detailed in the Methods section of the paper
-3. Script3_CleanData_JAMA2021_20220325: This script processes and organizes the risk factors variables in the data. A more detailed explanation of this process is included in the supplement (see "Organizing the risk factor variables") 
+3. Script3_CleanData_JAMA2021_20220325: This script processes and organizes the risk factors variables in the data. This script retypes variables into categorical vs. numeric, identifies duplicated variables, and codes missing values. A more detailed explanation of this process is included in the supplement (see "Organizing the risk factor variables").   
