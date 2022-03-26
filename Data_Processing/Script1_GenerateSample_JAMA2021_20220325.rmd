@@ -2,7 +2,7 @@
 title: "Script 1: Merge Raw SAS Wave1 and Wave2 Datasets"
 author: "Angel Garcia de la Garza"
 date: "March 25th, 2022"
-output: html_document
+output: md_document
 ---
 
 ```{r setup, include=FALSE}

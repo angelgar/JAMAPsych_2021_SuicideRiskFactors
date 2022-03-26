@@ -2,7 +2,7 @@
 title: "Script 4: Run Balanced Random Forest on NESARC Data"
 author: "Angel Garcia de la Garza"
 date: "March 25th, 2022"
-output: html_document
+output: md_document
 ---
 
 

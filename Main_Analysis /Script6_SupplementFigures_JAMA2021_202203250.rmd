@@ -2,15 +2,7 @@
 title: "Script 6: Supplemental Figures"
 author: "Angel Garcia de la Garza"
 date: "March 25th, 2022"
-output:
-  html_document:
-    code_folding: hide
-    toc: yes
-    toc_float: yes
-hitheme: tomorrow
-highlighter: highlight.js
-editor_options: 
-  chunk_output_type: console
+output: md_document
 ---
 
 
