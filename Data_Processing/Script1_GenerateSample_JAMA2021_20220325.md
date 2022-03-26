@@ -3,6 +3,8 @@ suicide variables (w2mother\_suicideonly.csv), and derived income
 measures (not in the raw dataset only in w1w2suicidedata.RData) and
 merge them all.
 
+    ## Load Data
+
     w1mother <- haven::read_sas(here("Data","Raw_Data", "w1mother.sas7bdat"))
     w2mother <- read_csv(here("Data","Raw_Data", "w2mother_suicideonly.csv"))
     load(here("Data","Raw_Data", "w1w2suicidedata.RData"))

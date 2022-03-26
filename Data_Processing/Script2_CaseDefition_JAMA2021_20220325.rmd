@@ -10,7 +10,7 @@ output: md_document
 
 knitr::opts_chunk$set(echo = TRUE, 
                       results = 'asis',
-                      cache = TRUE,
+                      cache = FALSE,
                       message = FALSE,
                       warning = FALSE,
                       cache.lazy = FALSE)
@@ -35,7 +35,8 @@ library(here)
 
 ```
 
-## R Markdown
+
+In this script I defined the cases for this analysis as detailed in the Methods section of the paper. 
 
 
 ```{r load data, cache = TRUE}
@@ -45,7 +46,6 @@ load(here("Data","Raw_Data", "w1w2suicidedata_raw_May2020.RData"))
 ```
 
 
-# Remove previous attempters
 
 ```{r}
 

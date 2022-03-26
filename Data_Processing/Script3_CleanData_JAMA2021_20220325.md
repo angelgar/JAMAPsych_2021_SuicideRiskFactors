@@ -1,5 +1,11 @@
 ## Libraries
 
+This script processes and organizes the risk factors variables in the
+data. This script retypes variables into categorical vs. numeric,
+identifies duplicated variables, and codes missing values. A more
+detailed explanation of this process is included in the supplement (see
+“Organizing the risk factor variables”).
+
 ## Load Data
 
     load(here("Data","Raw_Data", "w1w2suicidedata.RData"))
