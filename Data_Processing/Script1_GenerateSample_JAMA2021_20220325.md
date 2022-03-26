@@ -1,7 +1,10 @@
 This script will read in the raw Wave 1 data (w1mother.sas7bdat), W2
 suicide variables (w2mother\_suicideonly.csv), and derived income
 measures (not in the raw dataset only in w1w2suicidedata.RData) and
-merge them all.
+merge them all. To execute this script. You need to have the raw data
+files “w1mother.sas7bdat”, “w2mother\_suicideonly.csv”, and
+“w1w2suicidedata.RData” under the “/Data/Raw\_Data” directory. Start
+with this script and then move on to Script 2, Script 3, and so on.
 
     ## Load Data
 
