@@ -24,7 +24,7 @@ The initial files used for this analysis are the Wave 1 Mother dataset (w1mother
 
 ## Code 
 
-All of these scripts are in R Markdown format, and there's also an .md version of them that can be vizualized on github. 
+All of these scripts are in R Markdown format, and there's also an .md version of them that can be visualized on github. 
 
 ### Processing
 
