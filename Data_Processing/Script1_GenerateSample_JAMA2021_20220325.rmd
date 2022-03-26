@@ -6,7 +6,8 @@ output: md_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,
+                      eval = FALSE)
 
 library(tidyverse)
 library(haven)
@@ -14,11 +15,9 @@ library(here)
 
 ```
 
-
+This script will read in the raw Wave 1 data (w1mother.sas7bdat), W2 suicide variables (w2mother_suicideonly.csv), and derived income measures (not in the raw dataset only in w1w2suicidedata.RData) and merge them all. 
 
 ```{r}
-
-## Load Data
 
 w1mother <- haven::read_sas(here("Data","Raw_Data", "w1mother.sas7bdat"))
 w2mother <- read_csv(here("Data","Raw_Data", "w2mother_suicideonly.csv"))
@@ -29,7 +28,7 @@ load(here("Data","Raw_Data", "w1w2suicidedata.RData"))
 names(w1mother) <- toupper(names(w1mother))
 keep <- toupper(names(w1mother)) %in% c(w1vars1$code, "INCPER3", "INCFAM3")
 
-## Add Income Variables INCPER3 INCFAM3
+## Add Income Variables INCPER3 INCFAM3 not in the raw dataset (this is derived income)
 
 not.mother <-  w1vars1$code[!(w1vars1$code %in% toupper(names(w1mother)))]
 
