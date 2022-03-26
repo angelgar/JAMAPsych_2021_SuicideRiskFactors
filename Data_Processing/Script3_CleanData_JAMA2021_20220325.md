@@ -1,12 +1,10 @@
-## Libraries
-
 This script processes and organizes the risk factors variables in the
 data. This script retypes variables into categorical vs. numeric,
 identifies duplicated variables, and codes missing values. A more
 detailed explanation of this process is included in the supplement (see
 “Organizing the risk factor variables”).
 
-## Load Data
+# Load Data
 
     load(here("Data","Raw_Data", "w1w2suicidedata.RData"))
     load(here("Data","Raw_Data", "w1w2suicidedata_WithCases_May2020.RData"))
@@ -34,7 +32,7 @@ detailed explanation of this process is included in the supplement (see
                            -suicide_new,
                            -W2AGE)
 
-# Step 1: Sort out numeric from non numeric
+# Sort out numeric from non numeric
 
 I created a decision tree that uses two flag the numeric variables.
 
