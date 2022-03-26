@@ -16,7 +16,8 @@ knitr::opts_chunk$set(echo = TRUE,
                       message = FALSE,
                       warning = FALSE,
                       cache.lazy = FALSE,
-                      dpi= 100)
+                      dpi= 100,
+                      eval = FALSE)
 
 library(ggridges)
 library(pROC)
@@ -37,7 +38,7 @@ library(tidyverse)
 
 ```
 
-
+This script generates the  figures from the main body of the text 
 
 ```{r load}
 
@@ -174,7 +175,7 @@ write_csv(output.nesarc.structure, here("Data","Model_output", "Nnesarc_counts.c
 ```
 
 
-```{r load}
+```{r}
 
 
 load(here("Data","Model_output", "NESARC_Suicide_BRF_Output_May2020.rda"))

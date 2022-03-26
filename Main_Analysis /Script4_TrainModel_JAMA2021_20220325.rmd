@@ -36,7 +36,10 @@ library(tidyverse)
 
 ```
 
-## R Markdown
+
+This script trains the Balanced Random Forest model used for the rest of the analysis. 
+
+## Load Data
 
 
 ```{r load data, cache = TRUE}
@@ -46,7 +49,7 @@ load(here("Data","Processed_Data", "w1w2suicidedata_Clean_May2020.RData"))
 ```
 
 
-## SubSample
+## Remove uninformative variables from the dataset
 
 ```{r}
 

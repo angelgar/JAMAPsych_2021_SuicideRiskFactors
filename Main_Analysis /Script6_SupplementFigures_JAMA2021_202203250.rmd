@@ -8,8 +8,6 @@ output: md_document
 
 
 
-
-
 ```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = TRUE, 
@@ -18,7 +16,8 @@ knitr::opts_chunk$set(echo = TRUE,
                       message = FALSE,
                       warning = FALSE,
                       cache.lazy = FALSE,
-                      dpi= 100)
+                      dpi= 100,
+                      eval = FALSE)
 
 library(ggridges)
 library(pROC)
@@ -39,6 +38,7 @@ library(tidyverse)
 
 ```
 
+This script generates figures from the supplement
 
 
 ```{r}
@@ -110,7 +110,7 @@ output <- output %>%
 
 # Table 1: Risk Group Summary
 
-```{r, eval = T}
+```{r}
 
 very.high.cutoff <- min(output$threshold[which(output$PPV > 0.1)])
 
