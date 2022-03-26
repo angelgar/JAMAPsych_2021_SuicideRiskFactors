@@ -24,6 +24,8 @@ The initial files used for this analysis are the Wave 1 Mother dataset (w1mother
 
 ## Code 
 
+All of these scripts are in R Markdown format, and there's also an .md version of them that can be vizualized on github. 
+
 ### Processing
 
 The code is divided into two folders. The first (Data_Processing) contains all the necessary scripts to process the data into R. To execute this script. You need to have the raw data files "w1mother.sas7bdat", "w2mother_suicideonly.csv", and "w1w2suicidedata.RData" under the "/Data/Raw_Data" directory. There are three scripts in this folder that have to be run in order:
